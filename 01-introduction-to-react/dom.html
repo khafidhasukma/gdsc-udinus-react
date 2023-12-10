@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Manipulation</title>
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <script type="text/javascript">
+      // select element by id
+      const app = document.getElementById("app");
+
+      // create element
+      const header = document.createElement("h1");
+      const headerContent = document.createTextNode("Learn React with GDSC UDINUS 🚀");
+
+      // add text to element
+      header.appendChild(headerContent);
+
+      // add element to DOM
+      app.appendChild(header);
+    </script>
+  </body>
+</html>
